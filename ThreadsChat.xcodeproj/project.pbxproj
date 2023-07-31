@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		4A4734BE2A77D96B00C67842 /* ThreadsChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4734BD2A77D96B00C67842 /* ThreadsChatApp.swift */; };
-		4A4734C02A77D96B00C67842 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4734BF2A77D96B00C67842 /* ContentView.swift */; };
+		4A4734C02A77D96B00C67842 /* ThreadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4734BF2A77D96B00C67842 /* ThreadsView.swift */; };
 		4A4734C22A77D96C00C67842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4734C12A77D96C00C67842 /* Assets.xcassets */; };
 		4A4734C52A77D96C00C67842 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4734C42A77D96C00C67842 /* Preview Assets.xcassets */; };
+		4A4734CE2A77EF9F00C67842 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4734CD2A77EF9F00C67842 /* BubbleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A4734BA2A77D96B00C67842 /* ThreadsChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4734BD2A77D96B00C67842 /* ThreadsChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsChatApp.swift; sourceTree = "<group>"; };
-		4A4734BF2A77D96B00C67842 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A4734BF2A77D96B00C67842 /* ThreadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsView.swift; sourceTree = "<group>"; };
 		4A4734C12A77D96C00C67842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A4734C42A77D96C00C67842 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A4734CD2A77EF9F00C67842 /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +54,10 @@
 			isa = PBXGroup;
 			children = (
 				4A4734BD2A77D96B00C67842 /* ThreadsChatApp.swift */,
-				4A4734BF2A77D96B00C67842 /* ContentView.swift */,
+				4A4734BF2A77D96B00C67842 /* ThreadsView.swift */,
 				4A4734C12A77D96C00C67842 /* Assets.xcassets */,
 				4A4734C32A77D96C00C67842 /* Preview Content */,
+				4A4734CD2A77EF9F00C67842 /* BubbleView.swift */,
 			);
 			path = ThreadsChat;
 			sourceTree = "<group>";
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A4734C02A77D96B00C67842 /* ContentView.swift in Sources */,
+				4A4734CE2A77EF9F00C67842 /* BubbleView.swift in Sources */,
+				4A4734C02A77D96B00C67842 /* ThreadsView.swift in Sources */,
 				4A4734BE2A77D96B00C67842 /* ThreadsChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

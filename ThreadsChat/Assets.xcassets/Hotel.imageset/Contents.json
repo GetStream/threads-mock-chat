@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "carousel_wide_1024x768_Buitenkant Van der Valk Hotel Amsterdam - Amstel.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
