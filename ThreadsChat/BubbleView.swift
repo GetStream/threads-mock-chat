@@ -22,34 +22,40 @@ struct BubbleView: View {
             Image(systemName: "person")
                 .resizable()
                 .frame(width: 15,height: 15)
+                .clipShape(Circle())
                 .aspectRatio(contentMode: .fit)
         case 2:
             HStack {
                 Image(systemName: "person")
                     .resizable()
                     .frame(width: 15,height: 15)
+                    .clipShape(Circle())
                     .aspectRatio(contentMode: .fit)
                 Image(systemName: "person")
                     .resizable()
                     .frame(width: 15,height: 15)
+                    .clipShape(Circle())
                     .aspectRatio(contentMode: .fit)
             }
         default:
             ZStack {
-                Image(systemName: "person")
+                Image(uiImage: UIImage(named: "kimmy")!)
                     .resizable()
                     .frame(width: 20,height: 20)
                     .aspectRatio(contentMode: .fit)
+                    .clipShape(Circle())
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: -30, trailing: -5))
-                Image(systemName: "person")
+                Image(uiImage: UIImage(named: "jeroen")!)
                     .resizable()
                     .frame(width: 20,height: 20)
                     .aspectRatio(contentMode: .fit)
+                    .clipShape(Circle())
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 30))
-                Image(systemName: "person")
+                Image(uiImage: UIImage(named: "amos")!)
                     .resizable()
                     .frame(width: 20,height: 20)
                     .aspectRatio(contentMode: .fit)
+                    .clipShape(Circle())
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: -20))
             }
         }
