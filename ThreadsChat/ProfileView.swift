@@ -11,7 +11,6 @@ struct ProfileView: View {
     
     @State private var selectedColorIndex = 0
     @StateObject private var viewModel = ThreadsViewModel()
-
     
     let titles = ["Threads", "Replies", "Reposts"]
     @State var selectedIndex: Int?
@@ -93,8 +92,10 @@ struct ProfileView: View {
                                         .stroke(.gray, lineWidth: 2))
                     }
 
-                    Button {
-                        // TODO
+                    NavigationLink {
+                        ThreadChatView()
+                            .toolbar(.hidden, for: .tabBar)
+
                     } label: {
                         Text("Chat")
                             .frame(minWidth: 100, maxWidth: .infinity, minHeight: 40)
@@ -153,6 +154,8 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        NavigationStack {
+            ProfileView()
+        }
     }
 }
