@@ -132,7 +132,7 @@ struct ProfileView: View {
                                 selectedIndex = 0
                             }
                             .frame(maxWidth: .infinity)
-                            .animation(.easeInOut(duration: 0.3))
+                            .animation(.easeInOut(duration: 0.3), value: selectedIndex)
 
                 ForEach(viewModel.activities)
                     { item in
