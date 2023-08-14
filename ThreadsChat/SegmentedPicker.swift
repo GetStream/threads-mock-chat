@@ -66,13 +66,6 @@ public struct SegmentedPicker<Element, Content, Selection>: View
     }
 }
 
-struct SegmentedPicker_Previews: PreviewProvider {
-    static var previews: some View {
-        Text("")
-//        SegmentedPicker()
-    }
-}
-
 extension HorizontalAlignment {
     private enum CenterAlignmentID: AlignmentID {
         static func defaultValue(in dimension: ViewDimensions) -> CGFloat {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A108B232A896D38009450FF /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A108B222A896D38009450FF /* ThreadsTabView.swift */; };
+		4A108B252A896D81009450FF /* ThreadActivityRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A108B242A896D81009450FF /* ThreadActivityRowView.swift */; };
 		4A4734BE2A77D96B00C67842 /* ThreadsChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4734BD2A77D96B00C67842 /* ThreadsChatApp.swift */; };
 		4A4734C02A77D96B00C67842 /* ThreadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4734BF2A77D96B00C67842 /* ThreadsView.swift */; };
 		4A4734C22A77D96C00C67842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4734C12A77D96C00C67842 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A108B222A896D38009450FF /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
+		4A108B242A896D81009450FF /* ThreadActivityRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadActivityRowView.swift; sourceTree = "<group>"; };
 		4A4734BA2A77D96B00C67842 /* ThreadsChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4734BD2A77D96B00C67842 /* ThreadsChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsChatApp.swift; sourceTree = "<group>"; };
 		4A4734BF2A77D96B00C67842 /* ThreadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				4A8A27F42A839451009C4739 /* SegmentedPicker.swift */,
 				4A8A27F92A83BB3B009C4739 /* AppDelegate.swift */,
 				4A8A27FB2A83C0E4009C4739 /* ThreadChatView.swift */,
+				4A108B222A896D38009450FF /* ThreadsTabView.swift */,
+				4A108B242A896D81009450FF /* ThreadActivityRowView.swift */,
 			);
 			path = ThreadsChat;
 			sourceTree = "<group>";
@@ -165,9 +171,11 @@
 			files = (
 				4A8A27F52A839451009C4739 /* SegmentedPicker.swift in Sources */,
 				4A4734CE2A77EF9F00C67842 /* BubbleView.swift in Sources */,
+				4A108B252A896D81009450FF /* ThreadActivityRowView.swift in Sources */,
 				4A8A27FC2A83C0E4009C4739 /* ThreadChatView.swift in Sources */,
 				4A4734C02A77D96B00C67842 /* ThreadsView.swift in Sources */,
 				4A7F35762A7BCBBA0083CD5F /* ProfileView.swift in Sources */,
+				4A108B232A896D38009450FF /* ThreadsTabView.swift in Sources */,
 				4A8A27FA2A83BB3B009C4739 /* AppDelegate.swift in Sources */,
 				4A6909992A7AA53E007A8BA0 /* ThreadView.swift in Sources */,
 				4A4734BE2A77D96B00C67842 /* ThreadsChatApp.swift in Sources */,

@@ -66,7 +66,6 @@ struct ThreadView: View {
                 Text(model.footer)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundColor(.secondary)
-//                Spacer()
                 ForEach(model.replies) { reply in
                     Divider()
                         .padding(.horizontal,0)

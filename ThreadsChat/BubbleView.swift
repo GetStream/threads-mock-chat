@@ -10,11 +10,6 @@ import SwiftUI
 struct BubbleView: View {
     var replyCount: Int
     var body: some View {
-//        if replyCount == 0 {
-//            Spacer()
-//        } else {
-//            Text("x")
-//        }
         switch replyCount {
         case 0:
             Spacer()
