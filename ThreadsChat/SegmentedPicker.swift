@@ -53,7 +53,7 @@ public struct SegmentedPicker<Element, Content, Selection>: View
                     }
                 }
             }
-            
+
             if let selectedIndex = selectedIndex {
                 selection()
                     .frame(width: frames[selectedIndex].width,
@@ -72,12 +72,11 @@ extension HorizontalAlignment {
             return dimension[HorizontalAlignment.center]
         }
     }
-    
+
     static var horizontalCenterAlignment: HorizontalAlignment {
         HorizontalAlignment(CenterAlignmentID.self)
     }
 }
-
 
 extension View {
     @ViewBuilder

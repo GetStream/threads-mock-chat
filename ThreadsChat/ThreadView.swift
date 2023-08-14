@@ -10,7 +10,7 @@ import SwiftUI
 struct ThreadView: View {
     @StateObject
     var model: ThreadActivityRowModel
-    
+
     var body: some View {
         ScrollView {
             VStack {
@@ -22,16 +22,16 @@ struct ThreadView: View {
                             ZStack(alignment: .bottomTrailing) {
                                 Image(uiImage: model.avatarImage)
                                     .resizable()
-                                    .frame(width: 30,height: 30)
+                                    .frame(width: 30, height: 30)
                                     .aspectRatio(contentMode: .fit)
                                     .clipShape(Circle())
                                 ZStack {
                                     Circle()
-                                        .frame(width: 15,height: 15)
+                                        .frame(width: 15, height: 15)
                                         .foregroundColor(.white)
                                     Image(systemName: "heart.circle.fill")
                                         .resizable()
-                                        .frame(width: 15,height: 15)
+                                        .frame(width: 15, height: 15)
                                         .foregroundColor(.red)
                                 }
                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: -5, trailing: -5))
@@ -45,7 +45,7 @@ struct ThreadView: View {
                     Text(model.postAge)
                         .foregroundColor(.secondary)
                     Text("···")
-                    
+
                 }
                 Text(model.message)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -68,7 +68,7 @@ struct ThreadView: View {
                     .foregroundColor(.secondary)
                 ForEach(model.replies) { reply in
                     Divider()
-                        .padding(.horizontal,0)
+                        .padding(.horizontal, 0)
                     ThreadActivityRowView(model: reply)
                 }
                 .listStyle(PlainListStyle())
@@ -85,7 +85,7 @@ struct ThreadView_Previews: PreviewProvider {
             ThreadActivityRowModel(id: "5", username: "kimmy", message: "This is awesome!", image: nil, likeCount: 51, replyCount: 1, postAge: "30mh"),
             ThreadActivityRowModel(id: "6", username: "jeroen", message: "Such a cool feature.", image: nil, likeCount: 51, replyCount: 1, postAge: "10m"),
             ThreadActivityRowModel(id: "7", username: "amos", message: "Let's go!", image: nil, likeCount: 51, replyCount: 1, postAge: "1m")])
-        
+
         ThreadView(model: model)
     }
 }

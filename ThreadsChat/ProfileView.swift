@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ProfileView: View {
-    
+
     @State private var selectedColorIndex = 0
     @StateObject private var viewModel = ThreadsViewModel()
-    
+
     let titles = ["Threads", "Replies", "Reposts"]
     @State var selectedIndex: Int?
 
@@ -39,7 +39,7 @@ struct ProfileView: View {
                     Spacer()
                     Image(uiImage: UIImage(named: "nash")!)
                         .resizable()
-                        .frame(width: 60,height: 60)
+                        .frame(width: 60, height: 60)
                         .aspectRatio(contentMode: .fit)
                         .clipShape(Circle())
                 }
@@ -47,18 +47,18 @@ struct ProfileView: View {
                 HStack {
                     Image(uiImage: UIImage(named: "nash")!)
                         .resizable()
-                        .frame(width: 20,height: 20)
+                        .frame(width: 20, height: 20)
                         .aspectRatio(contentMode: .fit)
                         .clipShape(Circle())
                     Image(uiImage: UIImage(named: "nash")!)
                         .resizable()
-                        .frame(width: 20,height: 20)
+                        .frame(width: 20, height: 20)
                         .aspectRatio(contentMode: .fit)
                         .clipShape(Circle())
                         .padding(EdgeInsets(top: 0, leading: -15, bottom: 0, trailing: 0))
                     Image(uiImage: UIImage(named: "nash")!)
                         .resizable()
-                        .frame(width: 20,height: 20)
+                        .frame(width: 20, height: 20)
                         .aspectRatio(contentMode: .fit)
                         .clipShape(Circle())
                         .padding(EdgeInsets(top: 0, leading: -15, bottom: 0, trailing: 0))
@@ -78,7 +78,7 @@ struct ProfileView: View {
                                     RoundedRectangle(cornerRadius: 10)
                                         .stroke(.gray, lineWidth: 2))
                     }
-                    
+
                     Button {
                         // TODO
                     } label: {
@@ -134,8 +134,7 @@ struct ProfileView: View {
                             .frame(maxWidth: .infinity)
                             .animation(.easeInOut(duration: 0.3), value: selectedIndex)
 
-                ForEach(viewModel.activities)
-                    { item in
+                ForEach(viewModel.activities) { item in
                         ThreadActivityRowView(model: item)
                     }
             }

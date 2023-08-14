@@ -12,7 +12,7 @@ import StreamChatSwiftUI
 @main
 struct ThreadsChatApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
+
     var body: some Scene {
         WindowGroup {
             ThreadsTabsView()

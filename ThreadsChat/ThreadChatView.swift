@@ -11,10 +11,10 @@ import StreamChat
 import StreamChatSwiftUI
 
 struct ThreadChatView: View {
-    
+
     @Injected(\.chatClient) var chatClient
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
+
     var body: some View {
         ChatChannelView(
             viewFactory: DefaultViewFactory.shared,
@@ -23,7 +23,7 @@ struct ThreadChatView: View {
                             messageOrdering: .topToBottom
                         )
                         )
-        
+
     }
 }
 

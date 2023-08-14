@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ThreadsTabsView : View {
+struct ThreadsTabsView: View {
     var body: some View {
         TabView {
             NavigationStack {
@@ -16,22 +16,22 @@ struct ThreadsTabsView : View {
                 .tabItem {
                     Image(systemName: "house")
                 }
-            
+
             Text("")
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                 }
-            
+
             Text("")
                 .tabItem {
                     Image(systemName: "square.and.pencil")
                 }
-            
+
             Text("")
                 .tabItem {
                     Image(systemName: "heart")
                 }
-            
+
             ProfileView()
                 .tabItem {
                     Image(systemName: "person")

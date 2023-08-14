@@ -15,21 +15,21 @@ struct ThreadActivityRowView: View {
             ThreadView(model: model)
         } label: {
             VStack {
-                HStack{
+                HStack {
                     VStack {
                         ZStack(alignment: .bottomTrailing) {
                             Image(uiImage: model.avatarImage)
                                 .resizable()
-                                .frame(width: 30,height: 30)
+                                .frame(width: 30, height: 30)
                                 .aspectRatio(contentMode: .fit)
                                 .clipShape(Circle())
                             ZStack {
                                 Circle()
-                                    .frame(width: 15,height: 15)
+                                    .frame(width: 15, height: 15)
                                     .foregroundColor(.white)
                                 Image(systemName: "heart.circle.fill")
                                     .resizable()
-                                    .frame(width: 15,height: 15)
+                                    .frame(width: 15, height: 15)
                                     .foregroundColor(.red)
                             }
                             .padding(EdgeInsets(top: 0, leading: 0, bottom: -5, trailing: -5))
@@ -42,7 +42,7 @@ struct ThreadActivityRowView: View {
                             }
                         }
                     }
-                    
+
                     VStack {
                         HStack {
                             Text(model.username)
@@ -54,7 +54,7 @@ struct ThreadActivityRowView: View {
                             Text(model.postAge)
                                 .foregroundColor(.secondary)
                             Text("···")
-                            
+
                         }
                         Text(model.message)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -83,8 +83,8 @@ struct ThreadActivityRowView: View {
                             .padding(.leading, 40)
                     } else {
                         BubbleView(replyCount: model.replyCount)
-                            .frame(width:30, height: .infinity)
-                        
+                            .frame(width: 30, height: .infinity)
+
                         Text(model.footer)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .foregroundColor(.secondary)
@@ -114,7 +114,7 @@ class ThreadActivityRowModel: ObservableObject, Identifiable {
         self.replies = []
         self.isReply = true
     }
-    
+
     init(id: String,
          username: String,
          message: String,
@@ -133,7 +133,7 @@ class ThreadActivityRowModel: ObservableObject, Identifiable {
         self.replies = replies
         self.isReply = false
     }
-    
+
     var id: String
     var username: String
     var message: String
@@ -143,7 +143,7 @@ class ThreadActivityRowModel: ObservableObject, Identifiable {
     var postAge: String
     var isReply: Bool
     var replies: [ThreadActivityRowModel]
-    
+
     private var likeString: String? {
         switch likeCount {
         case 0:
@@ -154,7 +154,7 @@ class ThreadActivityRowModel: ObservableObject, Identifiable {
             return "\(likeCount) likes"
         }
     }
-    
+
     private var replyString: String? {
         switch replyCount {
         case 0:
@@ -165,17 +165,16 @@ class ThreadActivityRowModel: ObservableObject, Identifiable {
             return "\(replyCount) replies"
         }
     }
-    
+
     var footer: String {
         let footerStrings: [String] = [likeString, replyString].compactMap { $0 }
         return footerStrings.joined(separator: " • ")
     }
-    
+
     var avatarImage: UIImage {
         return UIImage(named: username) ?? UIImage(systemName: "person")!
     }
 }
-
 
 struct ThreadActivityRowView_Previews: PreviewProvider {
     static var previews: some View {
