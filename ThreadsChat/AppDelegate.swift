@@ -9,7 +9,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
     var chatClient: ChatClient = {
         var config = ChatClientConfig(apiKey: .init("8br4watad788"))
-//        config.applicationGroupIdentifier = "group.io.getstream.iOS.ChatDemoAppSwiftUI"
 
         let client = ChatClient(config: config)
         return client

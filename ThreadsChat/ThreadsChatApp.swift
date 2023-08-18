@@ -15,7 +15,7 @@ struct ThreadsChatApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ThreadsTabsView()
+            ThreadsTabView()
         }
     }
 }

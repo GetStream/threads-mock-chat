@@ -70,17 +70,17 @@
 			isa = PBXGroup;
 			children = (
 				4A4734BD2A77D96B00C67842 /* ThreadsChatApp.swift */,
+				4A108B222A896D38009450FF /* ThreadsTabView.swift */,
 				4A4734BF2A77D96B00C67842 /* ThreadsView.swift */,
 				4A4734C12A77D96C00C67842 /* Assets.xcassets */,
 				4A4734C32A77D96C00C67842 /* Preview Content */,
-				4A4734CD2A77EF9F00C67842 /* BubbleView.swift */,
-				4A6909982A7AA53E007A8BA0 /* ThreadView.swift */,
-				4A7F35752A7BCBBA0083CD5F /* ProfileView.swift */,
-				4A8A27F42A839451009C4739 /* SegmentedPicker.swift */,
 				4A8A27F92A83BB3B009C4739 /* AppDelegate.swift */,
 				4A8A27FB2A83C0E4009C4739 /* ThreadChatView.swift */,
-				4A108B222A896D38009450FF /* ThreadsTabView.swift */,
+				4A7F35752A7BCBBA0083CD5F /* ProfileView.swift */,
+				4A4734CD2A77EF9F00C67842 /* BubbleView.swift */,
+				4A8A27F42A839451009C4739 /* SegmentedPicker.swift */,
 				4A108B242A896D81009450FF /* ThreadActivityRowView.swift */,
+				4A6909982A7AA53E007A8BA0 /* ThreadView.swift */,
 			);
 			path = ThreadsChat;
 			sourceTree = "<group>";

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ThreadsTabsView: View {
+struct ThreadsTabView: View {
     var body: some View {
         TabView {
             NavigationStack {
@@ -42,6 +42,6 @@ struct ThreadsTabsView: View {
 
 struct ThreadsTabView_Previews: PreviewProvider {
     static var previews: some View {
-        ThreadsTabsView()
+        ThreadsTabView()
     }
 }
